@@ -31,6 +31,8 @@
     <string name="title_paired_devices">Paired Devices</string>
     <string name="title_other_devices">Other Available Devices</string>
     <string name="button_scan">Scan for devices</string>
+    <string name="_8v8">8v8</string>
+    <string name="_4x4">4x4</string>
     
 
 </resources>

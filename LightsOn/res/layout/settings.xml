@@ -2,12 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="setGame"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lightson.lightson.MainActivity" >
+    tools:context=".SettingsActivity" >
 
     <TextView
         android:id="@+id/title"
@@ -26,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp" >
+        android:layout_marginTop="13dp"
+        android:onClick="setGame">
 
         <RadioButton
             android:id="@+id/choose4"
@@ -34,14 +34,15 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:onClick="setGame"
-            android:text="4x4" />
+            android:text="@string/_4x4"
+            android:textColor="@dimen/activity_horizontal_margin" />
 
         <RadioButton
             android:id="@+id/choose8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="setGame"
-            android:text="8v8" />
+            android:text="@string/_8v8" />
 
     </RadioGroup>
 

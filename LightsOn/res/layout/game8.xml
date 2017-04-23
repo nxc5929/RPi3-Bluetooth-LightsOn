@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -49,7 +49,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -59,7 +59,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -69,7 +69,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -79,7 +79,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -89,7 +89,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -99,17 +99,7 @@
             android:layout_gravity="center"
             android:layout_row="0"
             android:minHeight="25dp"
-            android:minWidth="45dp"
-            android:onClick="selected"
-            android:text="@string/button" />
-    
-    <Button
-            android:id="@+id/button8_9"
-            android:layout_column="0"
-            android:layout_gravity="center"
-            android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -119,7 +109,7 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -129,7 +119,7 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -139,7 +129,7 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -149,7 +139,7 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -159,7 +149,7 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -169,7 +159,7 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -179,17 +169,17 @@
             android:layout_gravity="center"
             android:layout_row="1"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
-        
+
         <Button
             android:id="@+id/button8_17"
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -199,7 +189,7 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -209,7 +199,7 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -219,7 +209,7 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -229,7 +219,7 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -239,7 +229,7 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -249,7 +239,7 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -259,17 +249,17 @@
             android:layout_gravity="center"
             android:layout_row="2"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
-    
-    <Button
+
+        <Button
             android:id="@+id/button8_25"
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -279,7 +269,7 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -289,7 +279,7 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -299,7 +289,7 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -309,7 +299,7 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -319,7 +309,7 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -329,7 +319,7 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -339,17 +329,17 @@
             android:layout_gravity="center"
             android:layout_row="3"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
-    
-     <Button
+
+        <Button
             android:id="@+id/button8_33"
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="4"
             android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minWidth="40dp"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -422,8 +412,8 @@
             android:minWidth="45dp"
             android:onClick="selected"
             android:text="@string/button" />
-    
-    <Button
+
+        <Button
             android:id="@+id/button8_41"
             android:layout_column="0"
             android:layout_gravity="center"
@@ -502,7 +492,7 @@
             android:minWidth="45dp"
             android:onClick="selected"
             android:text="@string/button" />
-        
+
         <Button
             android:id="@+id/button8_49"
             android:layout_column="0"
@@ -582,8 +572,8 @@
             android:minWidth="45dp"
             android:onClick="selected"
             android:text="@string/button" />
-    
-    <Button
+
+        <Button
             android:id="@+id/button8_57"
             android:layout_column="0"
             android:layout_gravity="center"
@@ -662,10 +652,21 @@
             android:minWidth="45dp"
             android:onClick="selected"
             android:text="@string/button" />
+
+        <Button
+            android:id="@+id/button8_9"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:minHeight="25dp"
+            android:minWidth="45dp"
+            android:onClick="selected"
+            android:text="@string/button" />
+
     </GridLayout>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView8x8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/gridLayout2"
@@ -675,7 +676,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/button8x8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/gridLayout2"

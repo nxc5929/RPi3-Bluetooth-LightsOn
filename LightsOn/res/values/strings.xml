@@ -7,12 +7,15 @@
     
     <string name="title">Welcome to Lights On</string>
     <string name="subtitle">Created by Nathan and Curtis</string>
-    <string name="start">Start</string>
+    <string name="start4x4">Start 4x4</string>
+    <string name="start8x8">Start 8x8</string>
     
     
     <string name="game4">Game4</string>
     <string name="game8">Game8</string>
-    <string name="button">Select</string>
+    
+    <string name="startgame">Start Game</string>
+    <string name="button">X</string>
     
     <string name="settings">Settings</string>
     <string name="settings_option">Please select a 4x4 game or 8x8 game</string>

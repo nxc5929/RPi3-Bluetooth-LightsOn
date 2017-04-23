@@ -27,9 +27,9 @@ import android.widget.Toast;
 /**
  * This is the main Activity that displays the current chat session.
  */
-public class Game4 extends Activity {
+public class Game8 extends Activity {
     // Debugging
-    private static final String TAG = "Game4";
+    private static final String TAG = "Game8";
     private static final boolean D = true;
 
     // Message types sent from the BluetoothChatService Handler
@@ -64,7 +64,7 @@ public class Game4 extends Activity {
         if(D) Log.e(TAG, "+++ ON CREATE +++");
 
         // Set up the window layout
-        setContentView(R.layout.game4);
+        setContentView(R.layout.game8);
 
         // Get local Bluetooth adapter
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -286,29 +286,77 @@ public class Game4 extends Activity {
     public void selected(View view){
     	String name;
     	switch(view.getId()){
-    	case R.id.button4_1: name="0,0"; break;
-    	case R.id.button4_2: name="0,1"; break;
-    	case R.id.button4_3: name="0,2"; break;
-    	case R.id.button4_4: name="0,3"; break;
-    	case R.id.button4_5: name="1,0"; break;
-    	case R.id.button4_6: name="1,1"; break;
-    	case R.id.button4_7: name="1,2"; break;
-    	case R.id.button4_8: name="1,3"; break;
-    	case R.id.button4_9: name="2,0"; break;
-    	case R.id.button4_10: name="2,1"; break;
-    	case R.id.button4_11: name="2,2"; break;
-    	case R.id.button4_12: name="2,3"; break;
-    	case R.id.button4_13: name="2,0"; break;
-    	case R.id.button4_14: name="3,1"; break;
-    	case R.id.button4_15: name="3,2"; break;
-    	case R.id.button4_16: name="3,3"; break;
+    	case R.id.button8_1: name="0,0"; break;
+    	case R.id.button8_2: name="0,1"; break;
+    	case R.id.button8_3: name="0,2"; break;
+    	case R.id.button8_4: name="0,3"; break;
+    	case R.id.button8_5: name="0,4"; break;
+    	case R.id.button8_6: name="0,5"; break;
+    	case R.id.button8_7: name="0,6"; break;
+    	case R.id.button8_8: name="0,7"; break;
+    	case R.id.button8_9: name="1,0"; break;
+    	case R.id.button8_10: name="1,1"; break;
+    	case R.id.button8_11: name="1,2"; break;
+    	case R.id.button8_12: name="1,3"; break;
+    	case R.id.button8_13: name="1,4"; break;
+    	case R.id.button8_14: name="1,5"; break;
+    	case R.id.button8_15: name="1,6"; break;
+    	case R.id.button8_16: name="1,7"; break;
+    	case R.id.button8_17: name="2,0"; break;
+    	case R.id.button8_18: name="2,1"; break;
+    	case R.id.button8_19: name="2,2"; break;
+    	case R.id.button8_20: name="2,3"; break;
+    	case R.id.button8_21: name="2,4"; break;
+    	case R.id.button8_22: name="2,5"; break;
+    	case R.id.button8_23: name="2,6"; break;
+    	case R.id.button8_24: name="2,7"; break;
+    	case R.id.button8_25: name="3,0"; break;
+    	case R.id.button8_26: name="3,1"; break;
+    	case R.id.button8_27: name="3,2"; break;
+    	case R.id.button8_28: name="3,3"; break;
+    	case R.id.button8_29: name="3,4"; break;
+    	case R.id.button8_30: name="3,5"; break;
+    	case R.id.button8_31: name="3,6"; break;
+    	case R.id.button8_32: name="3,7"; break;
+    	case R.id.button8_33: name="4,0"; break;
+    	case R.id.button8_34: name="4,1"; break;
+    	case R.id.button8_35: name="4,2"; break;
+    	case R.id.button8_36: name="4,3"; break;
+    	case R.id.button8_37: name="4,4"; break;
+    	case R.id.button8_38: name="4,5"; break;
+    	case R.id.button8_39: name="4,6"; break;
+    	case R.id.button8_40: name="4,7"; break;
+    	case R.id.button8_41: name="5,0"; break;
+    	case R.id.button8_42: name="5,1"; break;
+    	case R.id.button8_43: name="5,2"; break;
+    	case R.id.button8_44: name="5,3"; break;
+    	case R.id.button8_45: name="5,4"; break;
+    	case R.id.button8_46: name="5,5"; break;
+    	case R.id.button8_47: name="5,6"; break;
+    	case R.id.button8_48: name="5,7"; break;
+    	case R.id.button8_49: name="6,0"; break;
+    	case R.id.button8_50: name="6,1"; break;
+    	case R.id.button8_51: name="6,2"; break;
+    	case R.id.button8_52: name="6,3"; break;
+    	case R.id.button8_53: name="6,4"; break;
+    	case R.id.button8_54: name="6,5"; break;
+    	case R.id.button8_55: name="6,6"; break;
+    	case R.id.button8_56: name="6,7"; break;
+    	case R.id.button8_57: name="7,0"; break;
+    	case R.id.button8_58: name="7,1"; break;
+    	case R.id.button8_59: name="7,2"; break;
+    	case R.id.button8_60: name="7,3"; break;
+    	case R.id.button8_61: name="7,4"; break;
+    	case R.id.button8_62: name="7,5"; break;
+    	case R.id.button8_63: name="7,6"; break;
+    	case R.id.button8_64: name="7,7"; break;
     	default: name="Unknown";
     	}
     	sendMessage(name);
     }
     
     public void startGame(View view){
-    	sendMessage("4");
+    	sendMessage("8");
     }
 
 }

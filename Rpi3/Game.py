@@ -57,7 +57,13 @@ def move(x, y, game_board):
 
 
 blueconnect.wait_for_connect()
-play4 = False
+
+choose = blueconnect.getNext()
+print(choose)
+if(choose == "4"):
+    play4 = True
+else:
+    play4 = False
 
 #Starting game'
 matrix.print_message("Starting game")

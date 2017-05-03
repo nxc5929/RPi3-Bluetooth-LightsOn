@@ -1,7 +1,30 @@
 import BlueConnect as blueconnect
 import LEDGrid as matrix
+import IPLocal as ip
 from random import randint
 import time
+
+bluetoothImage = [
+    [0,0,0,0,0,0,0,0],
+    [0,1,0,0,0,0,1,0],
+    [0,0,1,0,0,1,0,0],
+    [1,1,1,1,1,1,1,1],
+    [0,1,0,1,1,0,1,0],
+    [0,0,1,0,0,1,0,0],
+    [0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0]
+]
+
+wifiImage = [
+    [0,1,0,0,1,0,0,0],
+    [1,0,0,1,0,0,1,0],
+    [1,0,1,0,0,1,0,0],
+    [1,0,1,0,1,0,0,1],
+    [1,0,1,0,1,0,0,1],
+    [1,0,1,0,0,1,0,0],
+    [1,0,0,1,0,0,1,0],
+    [0,1,0,0,1,0,0,0]
+]
 
 def convert4to8Board(game4Array):
     temp = [[0 for x in range(8)] for y in range(8)]
@@ -23,10 +46,9 @@ def printToBoard(array, game4):
         matrix.printScreen(array)
 
 def randomize(array):
-    for row in range(len(array)):
-        for col in range(len(array[row])):
-            array[row][col] = randint(0, 1)
-    return array
+    x = randint(0, len(array) - 1)
+    y = randint(0, len(array[x]) - 1)
+    return move(x,y,array)
 
 def hasWon(board):
     won = True
@@ -53,10 +75,26 @@ def move(x, y, game_board):
     if checkValid(x+1, y, game_board): game_board[x+1][y] = negate(game_board[x+1][y])
     return game_board
 
+isConnected = False
+printToBoard(wifiImage, False)
+
+#For debugging
+if(ip.connected_to_internet()):
+    isConnected = True
+else:
+    time.sleep(10)
+    if(ip.connected_to_internet()):
+        isConnected = True
+
+if(isConnected == True):
+    matrix.print_message(ip.get_ip_address('wlan0'))
 
 
+printToBoard(bluetoothImage, False)
 
 blueconnect.wait_for_connect()
+
+matrix.print_message("Connected")
 
 choose = blueconnect.getNext()
 print(choose)
@@ -73,11 +111,12 @@ if(play4):
 else:
     c, r = 8, 8
 
-game_board = [[0 for x in range(c)] for y in range(r)]
+game_board = [[1 for x in range(c)] for y in range(r)]
 
 #Randomize Game board
 for times in range(0, 30):
-    game_board = randomize(game_board)
+    for steps in range(0, 4):
+        game_board = randomize(game_board)
     printToBoard(game_board, play4)
     time.sleep(0.05)
 

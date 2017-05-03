@@ -1,6 +1,7 @@
 import max7219.led as led
 
 device = led.matrix()
+device.brightness(1)
 
 def print_message(text):
     device.show_message(text)

@@ -203,4 +203,34 @@
         android:onClick="startGame"
         android:text="@string/startgame" />
 
+    <TextView
+        android:id="@+id/brightnessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="Brightness" />
+
+    <Button
+        android:id="@+id/brightnessDown"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gridLayout1"
+        android:layout_alignTop="@+id/brightnessUp"
+        android:onClick="brightness"
+        android:text="Down" />
+
+    <Button
+        android:id="@+id/brightnessUp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gridLayout1"
+        android:layout_below="@+id/button17"
+        android:layout_marginLeft="12dp"
+        android:onClick="brightness"
+        android:text="Up" />
+
 </RelativeLayout>

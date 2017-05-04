@@ -307,15 +307,6 @@ public class Game4 extends Activity {
     	sendMessage(name);
     }
     
-    public void brightness(View view){
-    	String mess = "";
-    	switch (view.getId()) {
-		case R.id.brightnessUp: mess = "u"; break;
-		case R.id.brightnessDown: mess = "d"; break;
-		}
-    	sendMessage(mess);
-    }
-    
     public void startGame(View view){
     	sendMessage("4");
     }

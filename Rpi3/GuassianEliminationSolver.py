@@ -22,6 +22,8 @@ def solveGuassianElimination(board):
     rowSize, colSize = len(board), len(board[0])
     eqs = []
 
+    board = list(board)
+
     # negate all board values, since algorithm works for finding moves to Lights Out
     for row in range(rowSize):
         for col in range(colSize):

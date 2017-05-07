@@ -307,6 +307,10 @@ public class Game4 extends Activity {
     	sendMessage(name);
     }
     
+    public void solve(View view){
+    	sendMessage("solve");
+    }
+    
     public void startGame(View view){
     	sendMessage("4");
     }

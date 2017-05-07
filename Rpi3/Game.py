@@ -2,6 +2,7 @@ import BlueConnect as blueconnect
 import LEDGrid as matrix
 import IPLocal as ip
 import GuassianEliminationSolver as fastSolve
+import Rpi3.Backtracker as slowSolve
 
 from random import randint
 import time
@@ -77,6 +78,10 @@ def move(x, y, game_board):
     if checkValid(x+1, y, game_board): game_board[x+1][y] = negate(game_board[x+1][y])
     return game_board
 
+def backTrackingDisplay(game_board, play4):
+    printToBoard(game_board, play4)
+    time.sleep(0.05)
+
 isConnected = False
 printToBoard(wifiImage, False)
 
@@ -151,6 +156,7 @@ if input == "fast":
 elif input == "slow":
     h = 2
     #Add slow solve here
+    slowSolve.solveBacktracking(game_board, play4)
 
 for i in range(11):
     matrix.invert(i%2)

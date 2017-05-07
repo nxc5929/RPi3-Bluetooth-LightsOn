@@ -18,7 +18,7 @@
         android:columnCount="8"
         android:columnOrderPreserved="false"
         android:minHeight="100dp"
-        android:minWidth="70dp"
+        android:minWidth="60dp"
         android:rowCount="8"
         android:rowOrderPreserved="false"
         android:useDefaultMargins="false" >
@@ -28,8 +28,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -38,8 +38,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -48,8 +48,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -58,8 +58,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -68,8 +68,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -78,8 +78,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -88,8 +88,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -98,8 +98,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="0"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -108,8 +108,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -118,8 +118,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -128,8 +128,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -138,8 +138,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+           	android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -148,8 +148,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -158,8 +158,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+           	android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -168,8 +168,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -178,8 +178,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -188,8 +188,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -198,8 +198,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -208,8 +208,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -218,8 +218,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -228,8 +228,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -238,8 +238,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -248,8 +248,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="2"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -258,8 +258,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -268,8 +268,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -278,8 +278,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -288,8 +288,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -298,8 +298,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -308,8 +308,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -318,8 +318,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -328,8 +328,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="3"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -338,8 +338,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="40dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -348,8 +348,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -358,8 +358,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -368,8 +368,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -378,8 +378,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -388,8 +388,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -398,8 +398,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -408,8 +408,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="4"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -418,8 +418,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -428,8 +428,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -438,8 +438,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -448,8 +448,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -458,8 +458,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -468,8 +468,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -478,8 +478,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -488,8 +488,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="5"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -498,8 +498,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -508,8 +508,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -518,8 +518,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -528,8 +528,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -538,8 +538,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -548,8 +548,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -558,8 +558,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -568,8 +568,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="6"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -578,8 +578,8 @@
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -588,8 +588,8 @@
             android:layout_column="1"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -598,8 +598,8 @@
             android:layout_column="2"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -608,8 +608,8 @@
             android:layout_column="3"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -618,8 +618,8 @@
             android:layout_column="4"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -628,8 +628,8 @@
             android:layout_column="5"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -638,8 +638,8 @@
             android:layout_column="6"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -648,8 +648,8 @@
             android:layout_column="7"
             android:layout_gravity="center"
             android:layout_row="7"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 
@@ -658,8 +658,8 @@
             android:layout_column="0"
             android:layout_gravity="left|top"
             android:layout_row="1"
-            android:minHeight="25dp"
-            android:minWidth="45dp"
+            android:minHeight="@dimen/height"
+            android:minWidth="@dimen/width"
             android:onClick="selected"
             android:text="@string/button" />
 

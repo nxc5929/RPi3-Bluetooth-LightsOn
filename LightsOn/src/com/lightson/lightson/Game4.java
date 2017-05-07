@@ -308,7 +308,12 @@ public class Game4 extends Activity {
     }
     
     public void solve(View view){
-    	sendMessage("solve");
+    	String mess = "";
+    	switch(view.getId()){
+    	case R.id.fastCheat: mess = "fast"; break;
+    	case R.id.slowCheat: mess = "slow"; break;
+    	}
+    	sendMessage(mess);
     }
     
     public void startGame(View view){

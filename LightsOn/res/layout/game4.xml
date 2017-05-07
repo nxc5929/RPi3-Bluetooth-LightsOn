@@ -194,32 +194,33 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/slowCheat"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/gridLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:onClick="startGame"
-        android:text="@string/startgame" />
-
-    <TextView
-        android:id="@+id/brightnessText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:text="Brightness" />
+        android:layout_alignLeft="@+id/gridLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="solve"
+        android:text="@string/slowCheat" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/fastCheat"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/gridLayout1"
         android:layout_below="@+id/button17"
         android:onClick="solve"
-        android:text="Cheat" />
+        android:text="@string/fastCheat" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/slowCheat"
+        android:layout_centerHorizontal="true"
+        android:onClick="startGame"
+        android:text="@string/startgame" />
 
 </RelativeLayout>

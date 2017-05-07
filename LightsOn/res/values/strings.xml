@@ -37,5 +37,7 @@
     <string name="_8v8">8v8</string>
     <string name="_4x4">4x4</string>
     
+    <string name="fastCheat">Fast Cheat</string>
+    <string name="slowCheat">Slow Cheat</string>
 
 </resources>

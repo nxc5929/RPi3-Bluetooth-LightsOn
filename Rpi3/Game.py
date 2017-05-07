@@ -1,6 +1,8 @@
 import BlueConnect as blueconnect
 import LEDGrid as matrix
 import IPLocal as ip
+import Rpi3.GuassianEliminationSolver as fastSolve
+
 from random import randint
 import time
 
@@ -140,6 +142,12 @@ while hasWon(game_board) == False:
 if input == "fast":
     h = 1
     #Add fast solve here
+    movesToVictory = fastSolve.solveGuassianElimination(game_board)
+    for move in movesToVictory:
+        game_board = move(move[0], move[1], game_board)
+        printToBoard(game_board, play4)
+        time.sleep(2)
+
 elif input == "slow":
     h = 2
     #Add slow solve here

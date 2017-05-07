@@ -98,62 +98,62 @@ blueconnect.wait_for_connect()
 
 matrix.print_message("Connected")
 
-choose = blueconnect.getNext()
-print(choose)
-if(choose == "4"):
-    play4 = True
-    matrix.print_message("4x4")
+while(True):
+    choose = blueconnect.getNext()
+    print(choose)
+    if(choose == "4"):
+        play4 = True
+        matrix.print_message("4x4")
 
-else:
-    play4 = False
-    matrix.print_message("8x8")
+    else:
+        play4 = False
+        matrix.print_message("8x8")
 
 #Starting game'
 
-if(play4):
-    c, r = 4, 4
-else:
-    c, r = 8, 8
+    if(play4):
+        c, r = 4, 4
+    else:
+        c, r = 8, 8
 
-game_board = [[1 for x in range(c)] for y in range(r)]
+    game_board = [[1 for x in range(c)] for y in range(r)]
 
-#Randomize Game board
-for times in range(0, 30):
-    for steps in range(0, 4):
-        game_board = randomize(game_board)
-    printToBoard(game_board, play4)
-    time.sleep(0.05)
-
-#Wait for play move
-input = ""
-while hasWon(game_board) == False:
-    input = blueconnect.getNext()
-
-    if input == "fast" or input == "slow":
-        break
-
-    inputArray = input.split(",")
-    print(inputArray)
-    x = int(inputArray[1])
-    y = int(inputArray[0])
-    game_board = move(x, y, game_board)
-    printToBoard(game_board, play4)
-
-if input == "fast":
-    h = 1
-    #Add fast solve here
-    movesToVictory = fastSolve.solveGuassianElimination(game_board)
-    for position in movesToVictory:
-        game_board = move(position[0], position[1], game_board)
+    #Randomize Game board
+    for times in range(0, 30):
+        for steps in range(0, 4):
+            game_board = randomize(game_board)
         printToBoard(game_board, play4)
-        time.sleep(0.5)
+        time.sleep(0.05)
 
-elif input == "slow":
-    h = 2
-    #Add slow solve here
+    #Wait for play move
+    input = ""
+    while hasWon(game_board) == False:
+        input = blueconnect.getNext()
 
-for i in range(11):
-    matrix.invert(i%2)
-    time.sleep(0.2)
+        if input == "fast" or input == "slow":
+            break
 
-matrix.print_message("Winner")
+        inputArray = input.split(",")
+        print(inputArray)
+        x = int(inputArray[1])
+        y = int(inputArray[0])
+        game_board = move(x, y, game_board)
+        printToBoard(game_board, play4)
+
+    if input == "fast":
+        #Add fast solve here
+        movesToVictory = fastSolve.solveGuassianElimination(game_board)
+        for position in movesToVictory:
+            game_board = move(position[0], position[1], game_board)
+            printToBoard(game_board, play4)
+            time.sleep(0.5)
+
+    elif input == "slow":
+        h = 2
+        #Add slow solve here
+
+    for i in range(11):
+        matrix.invert(i%2)
+        time.sleep(0.2)
+
+    matrix.print_message("Winner")

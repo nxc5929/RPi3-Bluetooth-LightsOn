@@ -355,6 +355,15 @@ public class Game8 extends Activity {
     	sendMessage(name);
     }
     
+    public void solve(View view){
+    	String mess = "";
+    	switch(view.getId()){
+    	case R.id.fastCheat8: mess = "fast"; break;
+    	case R.id.slowCheat8: mess = "slow"; break;
+    	}
+    	sendMessage(mess);
+    }
+    
     public void startGame(View view){
     	sendMessage("8");
     }

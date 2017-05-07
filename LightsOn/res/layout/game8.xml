@@ -685,4 +685,24 @@
         android:onClick="startGame"
         android:text="@string/startgame" />
 
+    <Button
+        android:id="@+id/slowCheat8"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gridLayout2"
+        android:layout_alignParentBottom="true"
+        android:onClick="solve"
+        android:text="@string/slowCheat" />
+
+    <Button
+        android:id="@+id/fastCheat8"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/gridLayout2"
+        android:onClick="solve"
+        android:text="@string/fastCheat" />
+
 </RelativeLayout>

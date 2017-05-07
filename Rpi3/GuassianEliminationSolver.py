@@ -18,11 +18,11 @@ __author__ = 'Curti_000'
 
 # solves a board of any dimension, taking in a board of int[row][col]
 # outputs a list of tuples of x,y coordinates
-def solveGuassianElimination(board):
-    rowSize, colSize = len(board), len(board[0])
+def solveGuassianElimination(oldboard):
+    rowSize, colSize = len(oldboard), len(oldboard[0])
     eqs = []
 
-    board = list(board)
+    board = list(oldboard)
 
     # negate all board values, since algorithm works for finding moves to Lights Out
     for row in range(rowSize):

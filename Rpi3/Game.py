@@ -70,6 +70,7 @@ def negate(input):
     else:
         return 1
 
+# represents a move on the board
 def move(x, y, game_board):
     if checkValid(x, y, game_board): game_board[x][y] = negate(game_board[x][y])
     if checkValid(x, y-1, game_board): game_board[x][y-1] = negate(game_board[x][y-1])

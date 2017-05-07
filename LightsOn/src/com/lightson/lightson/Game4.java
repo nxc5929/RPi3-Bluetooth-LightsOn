@@ -298,7 +298,7 @@ public class Game4 extends Activity {
     	case R.id.button4_10: name="2,1"; break;
     	case R.id.button4_11: name="2,2"; break;
     	case R.id.button4_12: name="2,3"; break;
-    	case R.id.button4_13: name="2,0"; break;
+    	case R.id.button4_13: name="3,0"; break;
     	case R.id.button4_14: name="3,1"; break;
     	case R.id.button4_15: name="3,2"; break;
     	case R.id.button4_16: name="3,3"; break;

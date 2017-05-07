@@ -100,11 +100,13 @@ choose = blueconnect.getNext()
 print(choose)
 if(choose == "4"):
     play4 = True
+    matrix.print_message("4x4")
+
 else:
     play4 = False
+    matrix.print_message("8x8")
 
 #Starting game'
-matrix.print_message("Starting game")
 
 if(play4):
     c, r = 4, 4
@@ -121,14 +123,26 @@ for times in range(0, 30):
     time.sleep(0.05)
 
 #Wait for play move
+input = ""
 while hasWon(game_board) == False:
     input = blueconnect.getNext()
+
+    if input == "fast" or input == "slow":
+        break
+
     inputArray = input.split(",")
     print(inputArray)
     x = int(inputArray[1])
     y = int(inputArray[0])
     game_board = move(x, y, game_board)
     printToBoard(game_board, play4)
+
+if input == "fast":
+    h = 1
+    #Add fast solve here
+elif input == "slow":
+    h = 2
+    #Add slow solve here
 
 for i in range(11):
     matrix.invert(i%2)

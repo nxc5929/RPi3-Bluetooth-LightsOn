@@ -22,15 +22,15 @@ def solveGuassianElimination(oldboard):
     rowSize, colSize = len(oldboard), len(oldboard[0])
     eqs = []
 
-    board = list(oldboard)
+    invertedBoard = list(oldboard)
 
     # negate all board values, since algorithm works for finding moves to Lights Out
     for row in range(rowSize):
         for col in range(colSize):
-            if board[row][col] == 0:
-                board[row][col] = 1
+            if invertedBoard[row][col] == 0:
+                invertedBoard[row][col] = 1
             else:
-                board[row][col] = 0
+                invertedBoard[row][col] = 0
 
 
     # sets up the equations representing the initial state of the board
@@ -46,7 +46,7 @@ def solveGuassianElimination(oldboard):
                 if offset != 0 and 0 <= col+offset < colSize:
                     eq.add(row*colSize+col+offset)
             # stores as an array of objects that each have an a and the equation representing the a value
-            eqs.append([board[row][col], eq])
+            eqs.append([invertedBoard[row][col], eq])
 
 
     numEQs = len(eqs)

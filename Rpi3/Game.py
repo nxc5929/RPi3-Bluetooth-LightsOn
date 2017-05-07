@@ -151,7 +151,7 @@ if input == "fast":
     for position in movesToVictory:
         game_board = move(position[0], position[1], game_board)
         printToBoard(game_board, play4)
-        time.sleep(2)
+        time.sleep(0.5)
 
 elif input == "slow":
     h = 2

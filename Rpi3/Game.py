@@ -1,9 +1,9 @@
 
-# import BlueConnect as blueconnect
-# import LEDGrid as matrix
-# import IPLocal as ip
+import BlueConnect as blueconnect
+import LEDGrid as matrix
+import IPLocal as ip
+import GuassianEliminationSolver as fastSolve
 import Backtracker as slowSolve
-# import Rpi3.Backtracker as slowSolve
 
 from random import randint
 import time
@@ -82,7 +82,7 @@ def move(x, y, game_board):
 
 def backTrackingDisplay(game_board, play4):
     printToBoard(game_board, play4)
-    time.sleep(0.05)
+    # time.sleep(0.005)
 
 if __name__ == '__main__':
 

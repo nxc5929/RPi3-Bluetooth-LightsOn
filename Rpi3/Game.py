@@ -1,8 +1,9 @@
-import BlueConnect as blueconnect
-import LEDGrid as matrix
-import IPLocal as ip
-import GuassianEliminationSolver as fastSolve
+
+# import BlueConnect as blueconnect
+# import LEDGrid as matrix
+# import IPLocal as ip
 import Backtracker as slowSolve
+# import Rpi3.Backtracker as slowSolve
 
 from random import randint
 import time

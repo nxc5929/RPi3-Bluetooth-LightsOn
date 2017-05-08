@@ -1,5 +1,7 @@
 __author__ = 'Curti_000'
 
+import Backtracker as bt
+
 class BoardConfig:
 
     def __init__(self,board,boardconfig):
@@ -129,31 +131,40 @@ class BoardConfig:
         printer = self.cursor.__str__() + '\n'
         for row in range(self.dim):
             for col in range(self.dim):
-                printer += self.board[row][col].__str__() + " "
+                if self.cursor[0] == row and self.cursor[1] == col:
+                    printer += "* "
+                else:
+                    printer += self.board[row][col].__str__() + " "
             printer += "\n"
 
-        printer += self.offInRow + "," + self.offInCol + "\n";
+        printer += self.offInRow.__str__() + "," + self.offInCol.__str__() + "\n";
         return printer
 
 if __name__ == '__main__':
-        board = []
+    board = [[0,0,1,0],[1,0,0,1],[0,0,1,0],[0,0,1,1]]
 
-        board[0][0] = 0
-        board[0][1] = 0
-        board[0][2] = 1
-        board[0][3] = 0
+    # board[0][0] = 0
+    #  board[0][1] = 0
+    # board[0][2] = 1
+    # board[0][3] = 0
 
-        board[1][0] = 1
-        board[1][1] = 0
-        board[1][2] = 0
-        board[1][3] = 1
+    # board[1][0] = 1
+    # board[1][1] = 0
+    # board[1][2] = 0
+    # board[1][3] = 1
 
-        board[2][0] = 0
-        board[2][1] = 0
-        board[2][2] = 1
-        board[2][3] = 0
+    # board[2][0] = 0
+    # board[2][1] = 0
+    # board[2][2] = 1
+    # board[2][3] = 0
 
-        board[3][0] = 0
-        board[3][1] = 0
-        board[3][2] = 1
-        board[3][3] = 1
+    # board[3][0] = 0
+    # board[3][1] = 0
+    # board[3][2] = 1
+    # board[3][3] = 1
+
+    config = BoardConfig(board, None)
+    print(bt.solveBacktracking(board, None))
+
+
+

@@ -24,6 +24,6 @@ def backtrack(config, game4):
                     return sol
             else:
                 #print("\tInvalid successor:", config)
-                pass
+                  ,m   ,m pass
         return []
 

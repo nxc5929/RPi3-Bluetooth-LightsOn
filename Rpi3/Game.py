@@ -1,11 +1,10 @@
 
-# import BlueConnect as blueconnect
-# import LEDGrid as matrix
-# import IPLocal as ip
+import BlueConnect as blueconnect
+import LEDGrid as matrix
+import IPLocal as ip
 import Backtracker as slowSolve
-# import Rpi3.Backtracker as slowSolve
 
-from random import randint
+from random import randint, shuffle
 import time
 
 bluetoothImage = [
@@ -152,6 +151,9 @@ if __name__ == '__main__':
         if input == "fast":
             #Add fast solve here
             movesToVictory = fastSolve.solveGuassianElimination(game_board)
+
+            shuffle(movesToVictory)
+
             for position in movesToVictory:
                 game_board = move(position[0], position[1], game_board)
                 printToBoard(game_board, play4)

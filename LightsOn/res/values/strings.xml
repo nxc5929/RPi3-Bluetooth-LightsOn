@@ -7,12 +7,15 @@
     
     <string name="title">Welcome to Lights On</string>
     <string name="subtitle">Created by Nathan and Curtis</string>
-    <string name="start">Start</string>
+    <string name="start4x4">Start 4x4</string>
+    <string name="start8x8">Start 8x8</string>
     
     
     <string name="game4">Game4</string>
     <string name="game8">Game8</string>
-    <string name="button">Select</string>
+    
+    <string name="startgame">Start Game</string>
+    <string name="button">X</string>
     
     <string name="settings">Settings</string>
     <string name="settings_option">Please select a 4x4 game or 8x8 game</string>
@@ -31,6 +34,10 @@
     <string name="title_paired_devices">Paired Devices</string>
     <string name="title_other_devices">Other Available Devices</string>
     <string name="button_scan">Scan for devices</string>
+    <string name="_8v8">8v8</string>
+    <string name="_4x4">4x4</string>
     
+    <string name="fastCheat">Fast Cheat</string>
+    <string name="slowCheat">Slow Cheat</string>
 
 </resources>

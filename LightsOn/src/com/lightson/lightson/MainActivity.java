@@ -43,11 +43,11 @@ public class MainActivity extends Activity {
 	
 	public void startGame(View view){
 		Intent intent;
-		//if(SettingsActivity.isGame4){
+		if(view.getId() == R.id.startButton4x4){
 			intent = new Intent(this, Game4.class);
-		//}else{
-			//intent = new Intent(this, Game8Activity.class);
-		//}
+		}else{
+			intent = new Intent(this, Game8.class);
+		}
 		startActivity(intent);
 	}
 }

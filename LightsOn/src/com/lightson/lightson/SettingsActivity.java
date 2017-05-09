@@ -6,7 +6,7 @@ import android.view.View;
 
 public class SettingsActivity extends Activity {
 
-	public static boolean isGame4 = true;
+	public static boolean isGame4 = false;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

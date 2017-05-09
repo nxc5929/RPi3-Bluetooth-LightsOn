@@ -39,7 +39,7 @@
         </activity>
         
         <activity
-            android:name=".Game8Activity"
+            android:name=".Game8"
             android:label="@string/game8" >
         </activity>
         

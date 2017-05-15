@@ -91,13 +91,18 @@ class BoardConfig:
     # this is based on the rules of the game
     def isValid(self):
         curRow = self.cursor[0]
+        curCol = self.cursor[1]
 
         valid = True
 
-        for row in range(curRow - 1):
-            if(self.offInRow[row] != 0):
-                valid = False
-
+        if(curRow > 1):
+            for row in range(curRow - 2):
+                if(self.offInRow[row] != 0):
+                    valid = False
+        if(curRow > 0 and curCol > 0):
+            for col in range(curCol - 1):
+                if(board[row][col] == 0):
+                    valid = False
         return valid
 
     # returns whether the config is the goal config,

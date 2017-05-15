@@ -101,7 +101,7 @@ class BoardConfig:
                     valid = False
         if(curRow > 0 and curCol > 0):
             for col in range(curCol - 1):
-                if(board[row][col] == 0):
+                if(self.board[curRow - 1][col] == 0):
                     valid = False
         return valid
 
@@ -189,27 +189,27 @@ class BoardConfig:
         return printer
 
 if __name__ == '__main__':
-    board = [[0,0,1,0],[1,0,0,1],[0,0,1,0],[0,0,0,1]]
+    board = [[1 for x in range(4)] for y in range(4)]
 
-    # board[0][0] = 0
-    #  board[0][1] = 0
-    # board[0][2] = 1
-    # board[0][3] = 0
+    board[0][0] = 0
+    board[0][1] = 0
+    board[0][2] = 1
+    board[0][3] = 0
 
-    # board[1][0] = 1
-    # board[1][1] = 0
-    # board[1][2] = 0
-    # board[1][3] = 1
+    board[1][0] = 1
+    board[1][1] = 0
+    board[1][2] = 0
+    board[1][3] = 1
 
-    # board[2][0] = 0
-    # board[2][1] = 0
-    # board[2][2] = 1
-    # board[2][3] = 0
+    board[2][0] = 0
+    board[2][1] = 0
+    board[2][2] = 1
+    board[2][3] = 0
 
-    # board[3][0] = 0
-    # board[3][1] = 0
-    # board[3][2] = 1
-    # board[3][3] = 1
+    board[3][0] = 0
+    board[3][1] = 0
+    board[3][2] = 1
+    board[3][3] = 1
 
     config = BoardConfig(board, None)
     print(bt.solveBacktracking(board, None))

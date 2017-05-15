@@ -4,7 +4,9 @@ import Backtracker as bt
 
 class BoardConfig:
 
+    #initilizes the board
     def __init__(self,board,boardconfig):
+        #is this the head of the backtracking tree?
         if(boardconfig == None):
             self.isFirst = False
             self.dim = len(board)
@@ -24,6 +26,7 @@ class BoardConfig:
                         self.offInRow[row] += 1
                         self.offInCol[col] += 1
         else:
+
             self.isFirst = boardconfig.isFirst
             self.dim = boardconfig.dim
             self.board = [[1 for x in range(self.dim)] for y in range(self.dim)]
@@ -46,6 +49,7 @@ class BoardConfig:
                 self.cursor = (boardconfig.cursor[0], boardconfig.cursor[1])
                 self.isFirst = False
 
+    #Finds all possible successors of the current moce
     def getSuccessors(self):
         successors = []
 
@@ -62,6 +66,7 @@ class BoardConfig:
 
         return successors
 
+    #Sees if the current board layout is valid
     def isValid(self):
         curRow = self.cursor[0]
         curCol = self.cursor[1]
@@ -74,6 +79,7 @@ class BoardConfig:
 
         return output
 
+    #Sees if the current board as achieved it's goal
     def isGoal(self):
         output = True
 
@@ -83,6 +89,7 @@ class BoardConfig:
 
         return output
 
+    #Makes a new move on the board
     def advanceCoord(self, initial, dim):
 
         if initial[1] < self.dim - 1:
@@ -99,6 +106,7 @@ class BoardConfig:
     def activateCursorTile(self):
         self.activateTile(self.cursor)
 
+    #The current tile attempting to solve for
     def activateTile(self, coord):
         row = coord[0]
         col = coord[1]
@@ -117,6 +125,7 @@ class BoardConfig:
         if col + 1 < self.dim:
             self.swapState(self.board, row, col + 1);
 
+    #Swaps current states of the board
     def swapState(self, board, row, col):
         if board[row][col] == 0:
             board[row][col] = 1
@@ -140,6 +149,7 @@ class BoardConfig:
         printer += self.offInRow.__str__() + "," + self.offInCol.__str__() + "\n";
         return printer
 
+#Testes to help debug program
 if __name__ == '__main__':
     board = [[0,0,1,0],[1,0,0,1],[0,0,1,0],[0,0,1,1]]
 

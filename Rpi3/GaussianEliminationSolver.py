@@ -18,7 +18,7 @@ __author__ = 'Curti_000'
 
 # solves a board of any dimension, taking in a board of int[row][col]
 # outputs a list of tuples of x,y coordinates
-def solveGuassianElimination(oldboard):
+def solveGaussianElimination(oldboard):
     rowSize, colSize = len(oldboard), len(oldboard[0])
     eqs = []
 
@@ -93,4 +93,4 @@ def solveGuassianElimination(oldboard):
 
 
 if __name__ == '__main__':
-    print(solveGuassianElimination(([1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0])))
+    print(solveGaussianElimination(([1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0])))
